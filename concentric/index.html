@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NT0NDGJFD3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NT0NDGJFD3');
-    </script>
-    <script>
-      function trackAndRedirect() {
-        setTimeout(function() {
-          window.location.href = "https://www.concentricusa.com/criticalpower";
-        }, 1500); 
-      }
-    </script>
-    <title>Redirecting to Concentric...</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Concentric</title>
+<noscript><meta http-equiv="refresh" content="0; url=https://www.concentricusa.com/criticalpower"></noscript>
+<script>
+  (function () {
+    var dest = "https://www.concentricusa.com/criticalpower";
+    var done = false;
+    function go() { if (!done) { done = true; window.location.replace(dest); } }
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NT0NDGJFD3', { send_page_view: false });
+    gtag('event', 'page_view', {
+      page_title: "Concentric",
+      transport_type: 'beacon',
+      event_callback: go,
+      event_timeout: 800
+    });
+    setTimeout(go, 1000);
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NT0NDGJFD3"></script>
 </head>
-<body onload="trackAndRedirect()" style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <p>Redirecting you to Concentric...</p>
-    <p>If you are not redirected, <a href="https://www.concentricusa.com/criticalpower">click here</a>.</p>
+<body style="font-family:sans-serif;text-align:center;padding-top:50px;color:#444">
+<p><a href="https://www.concentricusa.com/criticalpower" rel="noreferrer">Continue to Concentric</a></p>
 </body>
 </html>
